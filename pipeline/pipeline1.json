@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Copy data1",
+				"name": "Copy data to raw",
 				"type": "Copy",
 				"dependsOn": [],
 				"policy": {
@@ -23,7 +23,7 @@
 				"type": "DatabricksNotebook",
 				"dependsOn": [
 					{
-						"activity": "Copy data1",
+						"activity": "Copy data to raw",
 						"dependencyConditions": [
 							"Succeeded"
 						]
